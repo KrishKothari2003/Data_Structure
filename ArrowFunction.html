@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrow Function</title>
+</head>
+<body>
+	<input type="text" id="age"><br/>
+	<input type="button" value="check" onclick="af()">
+	<script type="text/javascript">	
+		function af(){
+			age=document.getElementById("age").value;
+			console.log(age);
+			adult=()=>console.log("Adult");
+			child=()=>console.log("Child");
+			if(age>=18){
+				adult();
+			}
+			else{
+				child();
+			}
+		}
+	</script>
+</body>
+</html>
